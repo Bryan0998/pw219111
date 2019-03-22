@@ -1,0 +1,103 @@
+@font-face{
+	font-family: 'Heebo';
+	src:url("https://fonts.googleapis.com/css?family=Heebo");
+}
+@font-face{
+	font-family: 'Anton';
+	src:url("https://fonts.googleapis.com/css?family=Anton");
+}
+@font-face{
+	font-family: 'Karla';
+	src:url("https://fonts.googleapis.com/css?family=Karla");
+}
+@font-face{
+	font-family: 'Roboto';
+	src:url("https://fonts.googleapis.com/css?family=Roboto");
+}
+body{
+	font-size: 16px;
+	margin: 0px auto;
+	max-width: 2048px;
+	min-width: 2048px;
+}
+header{
+	color: gray;
+	border-bottom: 5px solid black;
+	font-family: Karla,sans-serif;
+}
+header img{
+	display: inline-block;
+	vertical-align: middle;
+}
+header ul{
+	display: inline-block;
+	list-style: none;
+}
+header ul li{
+	display: inline-block;
+}
+section{
+	margin-top: 50px;
+}
+section article{
+	vertical-align: top;
+}
+#ulDerecha{
+	float: right;
+}
+#northernism{
+	color: black;
+	margin-left: 700px;
+}
+#art01{
+	display: inline-block;
+	padding-left: -100px;
+	position: relative;
+	width: 61%;
+}
+#art01 article{
+	margin-left: 200px;
+	margin-top: 50px;
+	width: 55%;
+}
+#art01 img{
+	display: block;
+	margin-bottom: 50px;
+}
+#art02{
+	border-left: 5px solid black;
+	display: inline-block;
+	padding-left: 20px;
+	width: 25%;
+}
+#indigo{
+	font-size: 4em;
+	position: relative;
+	left: 60px;
+	top: 300px;
+	z-index: 10;
+}
+.heebo{
+	font-family: Heebo, sans-serif; 
+}
+.roboto{
+	font-family: Roboto, sans-serif; 
+}
+.anton{
+	font-family: Anton, sans-serif; 
+}
+.karla{
+	font-family: Karla, sans-serif; 
+}
+.letramediana{
+	font-size: 2em;
+}
+.negritas{
+	font-weight: bold;
+}
+.texto{
+	font-size: 1.2em;
+}
+.gris{
+	color: gray;
+}
