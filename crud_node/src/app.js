@@ -25,7 +25,7 @@ app.use(myConnection(mysql,
 	password: '',
 	port: 3306,
 	database: 'crudnodejsmysql'
-}),'single')
+},'single'))
 
 //Activar el servidor de escucha
 app.listen(3000, () => {
