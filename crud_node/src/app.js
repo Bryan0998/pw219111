@@ -1,15 +1,14 @@
 const path = require('path');
 const express = require('express');
-const app = express();
 const morgan = require('morgan');
-const myConnection = require('express-myconnection');
 const mysql = require('mysql');
+const myConnection = require('express-myconnection');
+const app = express();
 
 //importar rutas
 const indiceRutas=require('./rutas/index');
 
-//usamos las rutas
-app.use('/',indiceRutas);
+
 
 //configuraciones
 app.set('port',process.env.PORT || 3000);
@@ -26,6 +25,9 @@ app.use(myConnection(mysql,
 	port: 3306,
 	database: 'crudnodejsmysql'
 },'single'))
+
+//usamos las rutas
+app.use('/',indiceRutas);
 
 //Activar el servidor de escucha
 app.listen(3000, () => {

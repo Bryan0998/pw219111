@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>CRUD NODEJS MYSQL</title>
+</head>
+<body>
+	<table border align="center">
+		<thead>
+			<tr>
+				<th>No.</th>
+				<th>Nombre</th>
+				<th>Dirección</th>
+				<th>Teléfono</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+	</table>
+
+</body>
+</html>
