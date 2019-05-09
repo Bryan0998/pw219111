@@ -1,6 +1,7 @@
 const app = new Vue({
 	el: "#app",
-	data: {
+	data: 
+	{
 		titulo: 'Hola mundo con VUE',
 		frutas: ['manzanas','peras','platano','mango'],
 		frutas2: [
@@ -8,6 +9,35 @@ const app = new Vue({
 			{nombre:"peras",cantidad:0},
 			{nombre:"platanos",cantidad:5},
 			{nombre:"mango",cantidad:12}
-		]
+		],
+		nuevaFruta: '',
+		total: 0
+	},
+	methods: 
+	{
+		agregarFruta(){
+			//console.log("Diste clic");
+			if(this.nuevaFruta!='')
+			{
+				this.frutas.push(this.nuevaFruta);
+				this.frutas2.push(
+				{
+					nombre: this.nuevaFruta,
+					cantidad: 0
+				})
+				this.nuevaFruta='';
+			}
+		}
+	},
+	computed: 
+	{
+		sumarFrutas(){
+			this.total=0;
+			for(fruta of this.frutas2)
+			{
+				this.total=this.total+fruta.cantidad;
+			}
+			return this.total;
+		}
 	}
 });
