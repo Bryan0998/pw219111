@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Componentes en Vue.js</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<saludo></saludo>
+	</div>
+	
+	<script>
+		Vue.component('saludo',{
+			template:
+			`
+				<div>
+					<h1>Saludo estático</h1>
+					<h3>0</h3>
+				</div>
+			`,
+			data(){
+				return{
+					saludo: 'Hola Vue'
+				} 
+			}
+		})
+
+		const app = new Vue({
+			el: '#app'
+		})
+	</script>
+</body>
+</html>
